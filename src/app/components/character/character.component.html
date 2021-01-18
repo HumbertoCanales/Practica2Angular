@@ -1,0 +1,6 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+      <h4 class="card-title visible" [ngClass]="{hidden: on_off}">{{details.name}}</h4>
+    <button type="button" class="btn btn-primary" (click)="on_off = !on_off">Hide</button>
+  </div>
+</div>

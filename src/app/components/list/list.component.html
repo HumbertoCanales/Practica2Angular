@@ -1,0 +1,11 @@
+<div class="container">
+  <br>
+  <h1>Characters</h1>
+  <button type="button" class="btn btn-warning" (click)="toggle()">{{btnName}}</button>
+  <br><br>
+  <div class="grid" *ngIf="show">
+    <app-character [details]="character" *ngFor='let character of characters' [class.selected]="character === charac" (click)="onSelect(character)"></app-character>
+  </div>
+  <br>
+  <app-character-detail [details]="charac"></app-character-detail>
+</div>

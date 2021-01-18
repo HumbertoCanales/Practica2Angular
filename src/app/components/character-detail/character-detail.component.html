@@ -1,0 +1,23 @@
+<div *ngIf="details">
+  <h5>{{details.name | uppercase}} Details</h5>
+  <div>
+    <label>Name:
+      <input [(ngModel)]="details.name" placeholder="name"/>
+    </label>
+  </div>
+  <div>
+    <label>Age:
+      <input [(ngModel)]="details.age" placeholder="name"/>
+    </label>
+  </div>
+  <div>
+    <label>Hair color:
+      <input [(ngModel)]="details.haircolor" placeholder="name"/>
+    </label>
+  </div>
+  <div>
+    <label>Details:
+      <input [(ngModel)]="details.details" placeholder="name"/>
+    </label>
+  </div>
+</div>
